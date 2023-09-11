@@ -1,16 +1,19 @@
 #include <stdio.h>
 
 /**
- * Main-Prints the alphabet in reverse order
+ * Main-Prints all single digits of base 10 starting from 0
  *
  * Return Always 0 (success)
  */
 
 int main(void)
-	char i;
+{
+	int i;
 
-	for(i = 'z'; i >= 'a'; i--)
-	putchar(i);
+	for (i = 0; i <= 9; i++)
+{
+	putchar(i + '0');
+}
 	putchar('\n');
 	return (0);
 }
