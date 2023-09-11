@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
-* Main-Prints all single digits of base 10 starting from 0
+*main - Prints all single digits of base 10 starting from 0
 *
-* Return Always 0 (success)
+*Return: Always 0 success
 */
-
 int main(void)
 {
 	int i;
