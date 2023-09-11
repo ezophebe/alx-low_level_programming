@@ -1,19 +1,16 @@
 #include <stdio.h>
-
 /**
- * main - main function
- *
- * Return: Always 0 (Success)
- */
+*Main-Prints alphabets in lowercase followed by a new line.
+*
+*Return Always 0 (success)
+*/
+
 int main(void)
 {
-	char alpha[26] = "abcdefghijklmnopqrstuvwxyz";
-	int i;
+	char i;
 
-	for (i = '0'; i <= 26; i++)
-	{
-		putchar(alpha[i]);
-	}
+	for (i = 'a'; i <= 'z'; i++)
+		putchar(i);
 		putchar('\n');
-	return (0);
+		return (0);
 }
