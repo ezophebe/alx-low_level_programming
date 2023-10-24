@@ -42,7 +42,7 @@ size_t print_listint_safe(const listint_t *head)
 		if (neww == NULL)
 			exit(98);
 
-		neww->p = (void *) head;
+		neww->p = (void *)head;
 		neww->next = p_head;
 		p_head = neww;
 		add = p_head;
@@ -51,12 +51,12 @@ size_t print_listint_safe(const listint_t *head)
 			add = add->next;
 			if (head == add->p)
 			{
-				printf("-> [%p] %d\n", (void *) head, head->n);
+				printf("-> [%p] %d\n", (void *)head, head->n);
 				free_listp(&p_head);
 				return (nodes);
 			}
 		}
-		printf("-> [%p] %d\n", (void *) head, head->n);
+		printf("[%p] %d\n", (void *)head, head->n);
 		head = head->next;
 		nodes++;
 	}
