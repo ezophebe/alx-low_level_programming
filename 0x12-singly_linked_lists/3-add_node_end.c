@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
-#include <string.h>
 /**
  *add_node_end - funtion adds a new node at the end of a list
  *@head: pointer to head of node
