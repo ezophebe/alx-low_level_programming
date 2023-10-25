@@ -9,26 +9,25 @@
 
 list_t *add_node(list_t **head, const char *str)
 {
-	list_t *newelem;
-	unsigned int i, count;
+	list_t *new_elem;
 
-	count = 0;
+        if (head == NULL)
+        return (NULL);
 
-	newelem = malloc(sizeof(list_t));
-	if (newelem == NULL)
-	{
-		return NULL;
-	}
-	newelem->str = strdup(str);
-	if (newelem->str == NULL)
-	{
-		free(newelem);
-		return NULL;
-	}
-	for (i = 0; str[i] != '\0'; i++)
-		count++;
-	newelem->len = count;
-	newelem->next = *head;
-	*head = newelem;
-	return (*head);
+        new_elem = malloc(sizeof(list_t));
+        if (new_elem == NULL)
+        return (NULL);
+
+        new_elem->str = strdup(str);
+        if (new_elem->str == NULL)
+        {
+        free(new_elem);
+        return (NULL);
+        }
+
+        new_elem->len = strlen(str);
+        new_elem->next = *head;
+        *head = new_elem;
+
+        return (new_elem);
 }
