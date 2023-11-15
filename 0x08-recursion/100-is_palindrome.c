@@ -10,12 +10,12 @@ int _strlen_recursion(char *s)
 {
 	if (*s == '\0')
 		return (0);
-	else 
+	else
 		return (1 + _strlen_recursion(s + 1));
 }
 
 /**
- *compare_string - function compares the characters of the string given 
+ *compare_string - function compares the characters of the string given
  *@s: input data/string given
  *@left: interator 1
  *@right:interator 2
