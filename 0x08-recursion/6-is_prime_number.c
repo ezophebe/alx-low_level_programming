@@ -4,7 +4,7 @@
 *prime_num - function checks for prime numbers
 *@x: given value
 *@y: divider
-*Return 0, or 1
+*Return: 0, or 1
 */
 
 int prime_num(int x, int y)
@@ -13,7 +13,7 @@ int prime_num(int x, int y)
 	{
 		return (0);
 	}
-  	else if (x == y)
+	else if (x == y)
 	{
 		return (1);
 	}
@@ -23,8 +23,7 @@ int prime_num(int x, int y)
 /**
  * is_prime_number - function returns 1 if n is prime
  * @n: given value
- * @i: iterator
- * Return 0, or 1
+ * Return: 0, or 1
  */
 
 int is_prime_number(int n)
