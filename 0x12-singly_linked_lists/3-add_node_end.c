@@ -26,10 +26,11 @@ list_t *add_node_end(list_t **head, const char *str)
 
 	if (tempry == NULL)
 		*head = newelem;
-	else {
-		        while (tempry->next != NULL)
-				            tempry = tempry->next;
-			        tempry->next = newelem;
-				    }
-	    return (*head);
+	else
+	{
+		while (tempry->next != NULL)
+		tempry = tempry->next;
+		tempry->next = newelem;
+	}
+	return (*head);
 }
